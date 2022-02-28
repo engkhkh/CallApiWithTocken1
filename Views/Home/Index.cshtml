@@ -1,0 +1,21 @@
+﻿@model CallApiWithTocken.Models.UserInfo
+@{
+    ViewData["Title"] = "login Page";
+}
+
+<h3>hi Login</h3>
+<hr />
+<div class ="row">
+    <div class="col-md-4">
+        <form asp-action="LoginUser" asp-controller="Home">
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username"  asp-for="UserName" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password"  asp-for="Password" required>  
+            <button type="submit">Login</button>   
+
+        </form>
+    </div>
+
+</div>
+
